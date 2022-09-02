@@ -1,0 +1,43 @@
+<section class="main_testimonial__wrapper">
+  <div class="container">
+    <div class="main_testimonial_row">
+      <div class="main_testimonial_slider_row">
+        {% for item in module.field_group %}
+        <div class="main_testimonial_cover">
+          <div class="testimonial_logo">
+            <img src="{{ get_asset_url('../../images/Vector_small.png') }}" alt="testimonial-logo">
+          </div>
+          <div class="testimonial_text">
+             {{ item.richtext_field }}  
+          </div>
+          <div class="testimonial_image-text-cover">
+												
+														{% if module.style.enable_logo_individual %}
+            <div class="satefan_image">
+              {% if item.logo.src %}
+              {% set sizeAttrs = 'width="{{ item.logo.width }}" height="{{ item.logo.height }}"' %}
+              {% if item.logo.size_type == 'auto' %}
+              {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+              {% elif item.logo.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.logo.max_width }}" height="{{ item.logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.logo.loading != 'disabled' ? 'loading="{{ item.logo.loading }}"' : '' %}
+              <img src="{{ item.logo.src }}" alt="{{ item.logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+														{% endif %}
+            <div class="testimonial_cover_had">
+              {{ item.richtext_field_1 }}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+ 
+
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</section>

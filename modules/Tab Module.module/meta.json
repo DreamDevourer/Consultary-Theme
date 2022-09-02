@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Bar%20Chart:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 71582148443,
+  "label" : "Tab Module",
+  "is_available_for_new_content" : true
+}

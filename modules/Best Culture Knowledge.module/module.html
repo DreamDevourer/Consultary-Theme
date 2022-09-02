@@ -1,0 +1,88 @@
+<section class="bestculture_knowledge__main" id="down">
+    <div class="container">
+       <div class="bestculture_knowledge__header">
+          <h2>
+             {{ module.text_field }}
+          </h2>
+       </div>
+      
+    {% set topic_posts = blog_recent_topic_posts(group.id, module.tag_field, 5) %}
+      
+       <div class="bestculture_knowledge__row">
+          
+             <div class="bestculture_knowledge__left">
+                {% for topic_post in topic_posts %}
+                {% if loop.first %}
+                     <div class="bestculture_knowledge__image" style="background-image:url('{{ topic_post.featured_image }}')">
+
+                     </div>
+                     <div class="bestc_dge__details">
+                       <div class="bestculture__text">
+                         <h3>
+                           {{ topic_post.title }}
+                         </h3>
+																											
+																											{% if module.style.show_date %}
+                         <div class="bestculture_date">
+                          {{ topic_post.publish_date|datetimeformat('%b %d, %y') }} 
+                         </div>
+																											{% endif %}
+																											
+                         <p>
+																													{% set maxDesc = module.style.description_limit %}
+                          {{ topic_post.post_body|striptags|truncate(maxDesc) }} 
+                         </p>
+                       </div>
+																									
+																									{% if module.style.show_author %}
+                       <div class="bestculture__authgor">
+                         By <span class=""> {{ topic_post.blog_post_author.display_name }} </span>
+                       </div>
+																									{% endif %}
+																									
+																									{% if module.style.enable_read_more %}
+                       <div class="bestculture__btn button_design">
+                         <a class="" href="{{ topic_post.absolute_url }}"> Read More </a>
+                       </div>
+																									{% endif %}
+																									
+                     </div>
+               {% endif %}
+               {% endfor %}
+            </div>
+         
+         
+            <div class="bestculture_knowledge__right">
+                <div class="bestcultureblog__inner">
+                  
+                    {% for topic_post in topic_posts %}
+                    {% if !loop.first %}
+                     <div class="siteblog__column">
+                         <div class="siteblog__left" style="background-image:url('{{ topic_post.featured_image }}')">
+                          
+                         </div>
+                         <div class="siteblog__right">
+                           <h3>
+                               <a href="{{ topic_post.absolute_url }}">{{ topic_post.name }}</a>
+                           </h3>
+                           <div class="blogdate_left">
+                              {{ topic_post.publish_date|datetimeformat('%b %d, %y') }} 
+                           </div>
+                           <div class="blogdate_author">
+                             By <span> {{ topic_post.blog_post_author.display_name }} </span>
+                           </div>
+                         </div>
+                     </div>
+                     {% endif %}
+                   {% endfor %}
+                   
+                  
+                  
+               
+                  
+                  
+                </div>
+           </div>
+      </div>   
+    </div>
+</section>

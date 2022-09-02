@@ -1,0 +1,149 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Home
+  screenshotPath: ../images/Thumbnails/HomeC.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+{# All templates are recommended to have an h1 present for both accessibility and SEO best practice. This should be at the top of the template before any other textual content. The h1 element below is within a dnd area to allow content editors the ability to adjust the content and alignment of the text. #}
+
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--home"
+%}
+
+  {# Hero banner #}
+
+  {% include_dnd_partial path="../sections/hero-banner.html" %}
+
+  {# Two column image right #}
+
+ {% dnd_section
+ 
+  vertical_alignment="MIDDLE",
+  full_width = true,
+  padding= {
+      top : "0",
+      left : "0",
+      right: "0",
+      bottom: "0"
+   
+  }
+  
+%}
+  {% dnd_module
+    path="../modules/Our Solutions",
+   
+  %}
+  {% end_dnd_module %}
+  
+{% end_dnd_section %}
+
+
+
+
+
+ {% dnd_section
+ 
+  vertical_alignment="MIDDLE",
+  full_width = true,
+  padding= {
+      top : "0",
+      left : "0",
+      right: "0",
+      bottom: "0"
+   
+  }
+  
+%}
+  {% dnd_module
+    path="../modules/What our clients Thinks",
+   
+  %}
+  {% end_dnd_module %}
+  
+{% end_dnd_section %}
+
+
+
+
+
+
+ {% dnd_section
+ 
+  vertical_alignment="MIDDLE",
+  full_width = true,
+  padding= {
+      top : "0",
+      left : "0",
+      right: "0",
+      bottom: "0"
+   
+  }
+  
+%}
+  {% dnd_module
+    path="../modules/Tab Module",
+   
+  %}
+  {% end_dnd_module %}
+  
+{% end_dnd_section %}
+
+
+
+
+
+ {% dnd_section
+ 
+  vertical_alignment="MIDDLE",
+  full_width = true,
+  padding= {
+      top : "0",
+      left : "0",
+      right: "0",
+      bottom: "0"
+   
+  }
+  
+%}
+  {% dnd_module
+    path="../modules/Meet Our Team",
+   
+  %}
+  {% end_dnd_module %}
+  
+{% end_dnd_section %}
+
+
+
+
+
+ {% dnd_section
+ 
+  vertical_alignment="MIDDLE",
+  full_width = true,
+  padding= {
+      top : "0",
+      left : "0",
+      right: "0",
+      bottom: "0"
+   
+  }
+  
+%}
+  {% dnd_module
+    path="../modules/What We Say",
+   
+  %}
+  {% end_dnd_module %}
+  
+{% end_dnd_section %}
+
+
+
+{% end_dnd_area %}
+{% endblock body %}

@@ -1,0 +1,29 @@
+<section class="faq_main__wrapper">
+  <div class="container">
+						
+						{% if module.style.enable_main_title %}
+    <div class="faq_hadding">
+     <h2>
+       {{ module.text_field }}
+      </h2> 
+    </div>
+						{% endif %}
+						
+    <div class="accordion-container">
+      {% for item in module.field_group %}
+      <div class="set">
+        <a {% if loop.first %} class="active"  {% endif %} href="javascript:void(0)">
+          {{ item.text_field_1 }}
+        </a>
+        <div class="content" style="{% if loop.first %} display:block; {% else %} display:none;  {% endif %}">
+           {{ item.richtext_field }}
+        </div>
+      </div>
+      {% endfor %}
+  
+      
+      
+      
+    </div>
+  </div>
+</section>

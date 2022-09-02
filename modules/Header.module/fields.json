@@ -1,0 +1,101 @@
+[ {
+  "id" : "7cd9b67b-de63-d48a-b61a-7d5c4c076a22",
+  "name" : "logo_field",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : true,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://www.remotish.agency/hubfs/consultary.svg",
+    "alt" : "consultary",
+    "suppress_company_name" : true,
+    "width" : 182,
+    "height" : 37,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "b70c2050-0052-173c-c144-b25355aa46d1",
+  "name" : "black_logo",
+  "display_width" : null,
+  "label" : "Black Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : true,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://www.remotish.agency/hubfs/consultary%20(1).svg",
+    "alt" : "consultary (1)",
+    "suppress_company_name" : true,
+    "width" : 182,
+    "height" : 37,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "7dcc9910-2ad1-e965-40ea-357859839a69",
+  "name" : "menu_field",
+  "display_width" : null,
+  "label" : "Menu",
+  "required" : false,
+  "locked" : false,
+  "type" : "menu",
+  "default" : ""
+}, {
+  "id" : "b5b3a794-bd16-9544-b7b3-a15670161158",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Talk to an expert"
+}, {
+  "id" : "91364dde-1683-5295-aa86-e50fd799bb4d",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a84e73a9-a076-1aa8-41b7-021150072bc3",
+    "name" : "enable_cta",
+    "display_width" : null,
+    "label" : "Enable CTA",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_cta" : true
+  }
+}, {
+  "id" : "7d7b07ff-55e3-8abd-8351-5c1f2c9d9b04",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

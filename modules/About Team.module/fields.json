@@ -1,0 +1,738 @@
+[ {
+  "id" : "fddab25a-d23a-633d-be37-26c2f3fcbccd",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5ae35096-406a-7881-d68e-13ed07c45fcb",
+    "name" : "enable_socials",
+    "display_width" : null,
+    "label" : "Enable Socials",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_socials" : true
+  }
+}, {
+  "id" : "af814d43-4672-0bd5-a7e8-219aee14d113",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 8
+  },
+  "children" : [ {
+    "id" : "2cfac7ae-f6ca-d599-29bc-3de7ddeb0817",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/NICOLE%202%201.png",
+      "alt" : "NICOLE 2 1",
+      "loading" : "lazy",
+      "width" : 235,
+      "height" : 300,
+      "max_width" : 235,
+      "max_height" : 300
+    }
+  }, {
+    "id" : "9b035550-2975-af65-120a-0b49623e22a1",
+    "name" : "profile_name",
+    "display_width" : null,
+    "label" : "Profile Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Camille Balhorn"
+  }, {
+    "id" : "0c9edbfd-bfc1-9016-9019-c576f75831e7",
+    "name" : "profile_post",
+    "display_width" : null,
+    "label" : "Profile Post",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "HubSpot Strategist"
+  }, {
+    "id" : "b96cde49-44a0-a0f5-9fd2-4521b076ad8d",
+    "name" : "social",
+    "display_width" : null,
+    "label" : "Social",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "a4caaf87-1630-8481-33b4-9421067f70d1",
+      "name" : "icon_field",
+      "display_width" : null,
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "icon_set" : "fontawesome-5.14.0",
+      "type" : "icon",
+      "default" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "id" : "9676c3c9-1f5e-ff37-4209-41fd602acb7c",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }, {
+    "id" : "0180d511-36e8-760e-601d-55effa2eb943",
+    "name" : "link_field_1",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/NICOLE%202%201.png",
+      "alt" : "NICOLE 2 1",
+      "loading" : "lazy",
+      "width" : 235,
+      "height" : 300,
+      "max_width" : 235,
+      "max_height" : 300
+    },
+    "profile_name" : "Camille Balhorn",
+    "profile_post" : "HubSpot Strategist",
+    "social" : [ {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    } ],
+    "link_field_1" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/NICOLE%202%201.png",
+      "alt" : "NICOLE 2 1",
+      "loading" : "lazy",
+      "width" : 235,
+      "height" : 300,
+      "max_width" : 235,
+      "max_height" : 300
+    },
+    "profile_name" : "Camille Balhorn",
+    "profile_post" : "HubSpot Strategist",
+    "social" : [ {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    } ],
+    "link_field_1" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/NICOLE%202%201.png",
+      "alt" : "NICOLE 2 1",
+      "loading" : "lazy",
+      "width" : 235,
+      "height" : 300,
+      "max_width" : 235,
+      "max_height" : 300
+    },
+    "profile_name" : "Camille Balhorn",
+    "profile_post" : "HubSpot Strategist",
+    "social" : [ {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    } ],
+    "link_field_1" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/NICOLE%202%201.png",
+      "alt" : "NICOLE 2 1",
+      "loading" : "lazy",
+      "width" : 235,
+      "height" : 300,
+      "max_width" : 235,
+      "max_height" : 300
+    },
+    "profile_name" : "Camille Balhorn",
+    "profile_post" : "HubSpot Strategist",
+    "social" : [ {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      }
+    } ],
+    "link_field_1" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/NICOLE%202%201.png",
+      "alt" : "NICOLE 2 1",
+      "loading" : "lazy",
+      "width" : 235,
+      "height" : 300,
+      "max_width" : 235,
+      "max_height" : 300
+    },
+    "profile_name" : "Camille Balhorn",
+    "profile_post" : "HubSpot Strategist",
+    "social" : [ {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "link_field_1" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/NICOLE%202%201.png",
+      "alt" : "NICOLE 2 1",
+      "loading" : "lazy",
+      "width" : 235,
+      "height" : 300,
+      "max_width" : 235,
+      "max_height" : 300
+    },
+    "profile_name" : "Camille Balhorn",
+    "profile_post" : "HubSpot Strategist",
+    "social" : [ {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "link_field_1" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/NICOLE%202%201.png",
+      "alt" : "NICOLE 2 1",
+      "loading" : "lazy",
+      "width" : 235,
+      "height" : 300,
+      "max_width" : 235,
+      "max_height" : 300
+    },
+    "profile_name" : "Camille Balhorn",
+    "profile_post" : "HubSpot Strategist",
+    "social" : [ {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "link_field_1" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/NICOLE%202%201.png",
+      "alt" : "NICOLE 2 1",
+      "loading" : "lazy",
+      "width" : 235,
+      "height" : 300,
+      "max_width" : 235,
+      "max_height" : 300
+    },
+    "profile_name" : "Camille Balhorn",
+    "profile_post" : "HubSpot Strategist",
+    "social" : [ {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "icon_field" : {
+        "name" : "Facebook Square",
+        "unicode" : "f082",
+        "type" : "REGULAR"
+      },
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "link_field_1" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

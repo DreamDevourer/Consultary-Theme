@@ -1,0 +1,71 @@
+<section class="footer__main">
+     <div class="container">
+         <div class="footer__row">
+           <div class="footer__column1">
+              <h3>
+                 {{ module.column_1.text_field }}
+              </h3>
+              <div class="footer__menu">
+                 {% simple_menu menu_tree="{{ module.column_1.simplemenu_field }}" %}
+             </div>
+           </div>
+           <div class="footer__column2">
+              <h3>
+                {{ module.column_2.text_field }}
+             </h3>
+             <div class="footer__menu">
+                {% simple_menu menu_tree="{{ module.column_2.simplemenu_field }}" %}
+             </div>
+           </div>
+           <div class="footer__column3">
+             <h3>
+               {{ module.column_3.text_field }}
+             </h3>
+             <div class="footer__menu">
+                 {% simple_menu menu_tree="{{ module.column_3.simplemenu_field }}" %}
+             </div>
+             
+           </div>
+           <div class="footer__column4">
+              <h3>
+                 {{ module.field_group.text_field_1 }}
+              </h3>
+															
+													{% if module.style.enable_socials %}
+             <div class="footer__social">
+                <ul>
+                  {% for item in module.field_group.social %}
+                  <li> 
+                    {% set href = item.link_field.url.href %}
+                    {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                    {% set href = "mailto:" + href %}
+                    {% endif %}
+                    <a href="{{ href }}"
+                       {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                       {% if item.link_field.rel %}rel="{{ item.link_field.rel }}"{% endif %}
+                       >
+                        <span>
+                         	{% icon
+		name="{{ item.icon_field.name }}"
+		style="{{ item.icon_field.type }}"
+		unicode="{{ item.icon_field.unicode }}"
+		icon_set="{{ item.icon_field.icon_set }}"
+	%}
+                       </span>
+                         <span>{{ item.text_field_2 }}</span>
+                    </a>
+                  </li>
+                  {% endfor %}
+               </ul>
+             </div>
+															{% endif %}
+             
+           </div>
+       </div>
+       
+       <div class="footer__copyright">
+           {{ module.text_field_3 }}
+       </div>
+       
+     </div>
+</section>

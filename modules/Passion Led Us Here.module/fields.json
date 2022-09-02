@@ -1,0 +1,58 @@
+[ {
+  "id" : "d81a7879-42d1-f1e6-d68a-c671ba2edb99",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/21429431/unsplash_gFmBquOaFDE.png",
+    "alt" : "unsplash_gFmBquOaFDE",
+    "loading" : "lazy",
+    "width" : 361,
+    "height" : 360,
+    "max_width" : 361,
+    "max_height" : 360
+  }
+}, {
+  "id" : "dece2760-377f-e7ec-df05-ce697e786f1b",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "44f54d21-aa74-aa8b-f149-38336345f94a",
+    "name" : "textalignment_field",
+    "display_width" : null,
+    "label" : "Text alignment",
+    "required" : false,
+    "locked" : false,
+    "type" : "textalignment",
+    "default" : {
+      "text_align" : "CENTER"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "textalignment_field" : {
+      "text_align" : "CENTER"
+    }
+  }
+}, {
+  "id" : "69e50d75-12be-c3b2-19b2-e55f1a0588ee",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2><span>Passion</span> Led Us Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia est adipiscing aliquam aliquam magna sagittis, sed. Scelerisque sapien tempor sit urna ipsum.</p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor consectetur dolor tellus volutpat pellentesque nullam ante nulla. Turpis venenatis, velit pharetra mi eget. Urna ut molestie faucibus malesuada fermentum. Sit augue a dignissim leo dolor. Fermentum, accumsan, ut mauris mauris. Enim, tellus at venenatis vulputate enim. Amet a accumsan, fames adipiscing eleifend est accumsan nec amet. Vel placerat molestie urna amet vestibulum. Et varius nibh nunc vitae. In pretium sed purus massa aliquam morbi.</p>"
+} ]

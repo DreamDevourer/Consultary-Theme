@@ -1,0 +1,169 @@
+[ {
+  "id" : "86ae6243-3e29-e05b-759e-6de5fe7413cb",
+  "name" : "youtube_link",
+  "display_width" : null,
+  "label" : " YouTube Link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://www.youtube.com/embed/ScMzIvxBSi4"
+}, {
+  "id" : "df2f2cec-93e5-67fe-f02c-74f6021128eb",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam aenean habitasse mi habitant fermentum vulputate vulputate. Consectetur euismod in nec quam facilisis platea sed. Dictum pretium sed adipiscing nibh posuere mattis. Sed eget netus proin vulputate scelerisque nec habitant posuere. Sed integer laoreet in mi elementum. Scelerisque elit neque nibh cursus eget urna, in.</p>"
+}, {
+  "id" : "1767dd31-dbc2-4afe-adb3-8d6d97d345eb",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6298d308-4ed6-6491-8867-2ccfd2dba9b8",
+    "name" : "thumbnail",
+    "display_width" : null,
+    "label" : "Thumbnail",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/video_thumnail_main.png",
+      "alt" : "video_thumnail_main",
+      "loading" : "lazy",
+      "width" : 789,
+      "height" : 406,
+      "max_width" : 789,
+      "max_height" : 406
+    }
+  }, {
+    "id" : "0caab0e4-b247-5192-695b-84d9744bdee2",
+    "name" : "play_icon",
+    "display_width" : null,
+    "label" : "Play Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/play-1.svg",
+      "alt" : "play-1",
+      "loading" : "lazy",
+      "width" : 79,
+      "height" : 79,
+      "max_width" : 79,
+      "max_height" : 79
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "thumbnail" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/video_thumnail_main.png",
+      "alt" : "video_thumnail_main",
+      "loading" : "lazy",
+      "width" : 789,
+      "height" : 406,
+      "max_width" : 789,
+      "max_height" : 406
+    },
+    "play_icon" : {
+      "size_type" : "auto",
+      "src" : "https://www.remotish.agency/hubfs/play-1.svg",
+      "alt" : "play-1",
+      "loading" : "lazy",
+      "width" : 79,
+      "height" : 79,
+      "max_width" : 79,
+      "max_height" : 79
+    }
+  }
+}, {
+  "id" : "d53b6d48-329b-6c8d-a7da-c32424c8b4eb",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Description group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "f897b9cb-1958-4dcb-1819-8119efb2a22e",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/Vector%20(10).svg",
+      "alt" : "Vector (10)",
+      "loading" : "lazy",
+      "width" : 42,
+      "height" : 39,
+      "max_width" : 42,
+      "max_height" : 39
+    }
+  }, {
+    "id" : "4f25e8a8-860d-8022-d7cd-e2c22dd83e61",
+    "name" : "richtext_field_1",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Talents</h3>\n<ul>\n<li>Whistling</li>\n<li>Dad dance moves</li>\n<li>Turning random phrases into songs</li>\n</ul>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/Vector%20(10).svg",
+      "alt" : "Vector (10)",
+      "loading" : "lazy",
+      "width" : 42,
+      "height" : 39,
+      "max_width" : 42,
+      "max_height" : 39
+    },
+    "richtext_field_1" : "<h3>Talents</h3>\n<ul>\n<li>Whistling</li>\n<li>Dad dance moves</li>\n<li>Turning random phrases into songs</li>\n</ul>"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/Vector%20(10).svg",
+      "alt" : "Vector (10)",
+      "loading" : "lazy",
+      "width" : 42,
+      "height" : 39,
+      "max_width" : 42,
+      "max_height" : 39
+    },
+    "richtext_field_1" : "<h3>Talents</h3>\n<ul>\n<li>Whistling</li>\n<li>Dad dance moves</li>\n<li>Turning random phrases into songs</li>\n</ul>"
+  } ]
+} ]

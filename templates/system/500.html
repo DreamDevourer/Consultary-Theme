@@ -1,0 +1,28 @@
+<!--
+  templateType: error_page
+  isAvailableForNewContent: true
+  label: 500 error
+ 
+-->
+{% set default_header = "default_header" %}
+
+
+
+{% set template_css = "../../css/templates/system.css" %}
+{% extends "../layouts/base.html" %}
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Error 500 | Server error" %}
+
+{% block body %}
+<div class="error_main">
+<section class="content-wrapper">
+  <div class="error-page">
+    {% module "content"
+      path="@hubspot/rich_text",
+      html="<h1>Bummer!</h1><p class='error_subtext'>We are experiencing Server issues</p>"
+    %}
+   
+  </div>
+</section>
+   </div>
+{% endblock body %}

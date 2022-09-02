@@ -1,0 +1,55 @@
+<section class="our_rocess__main"> 
+  <div class="container">
+    <div class="our_rocess__row">
+      <div class="our_rocess__left">
+										
+										{% if module.style.enable_main_heading %}
+        <div class="our_rocess__text">
+           {{ module.header }}
+        </div>
+										{% endif %}
+										
+        <div class="tab-list-cover">
+          <ul id="tabs-nav">
+            {% for item in module.field_group %}
+            <li class="tab-content">
+              <a href="#tab-{{loop.index}}">
+              <div class="tab-list">
+                <span class="tab-code">{{loop.index}}</span>
+                <div class="tab-text">
+                  {{ item.richtext_field }}
+                </div>
+              </div>
+              </a>
+            </li>
+           {% endfor %} 
+        
+            
+            
+         
+            
+          </ul>
+        </div>
+      </div>
+      <div class="our_rocess__right">
+        {% for item in module.field_group %}
+        <div id="tab-{{loop.index}}" class="process-tab-image">
+          {% if item.image_field.src %}
+          {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+          {% if item.image_field.size_type == 'auto' %}
+          {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+          {% elif item.image_field.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+          <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        {% endfor %} 
+        
+       
+        
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "inline_help_text" : "Other style coming in global button from  theme setting. Can't be change style locally",
+  "icon" : "fontawesome-5.14.0:Alternate%20Expand:SOLID",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 79776245891,
+  "label" : "Custom Gradient Button",
+  "is_available_for_new_content" : true
+}

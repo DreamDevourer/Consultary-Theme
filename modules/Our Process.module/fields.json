@@ -1,0 +1,118 @@
+[ {
+  "id" : "4b857612-2da1-524f-929f-82b483fef6f7",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>The <span>Process</span></h2>"
+}, {
+  "id" : "cd0cfb03-d432-1c9d-ff68-657a695c4f6d",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c49b6de8-0f13-3375-0358-f138fed2c2f3",
+    "name" : "enable_main_heading",
+    "display_width" : null,
+    "label" : "Enable main heading",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_main_heading" : true
+  }
+}, {
+  "id" : "dff98e02-08d2-b1a9-304e-4c477f29db5d",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "684ef6fa-7ba1-12f9-bc16-504654c39dbf",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h6>Remote Readiness</h6>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+  }, {
+    "id" : "182b285e-e7ad-0f92-5456-6c7a935efabe",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/Imported%20images/Screenshot-2022-04-24-224359.png",
+      "alt" : "Screenshot-2022-04-24-224359",
+      "loading" : "lazy",
+      "width" : 569,
+      "height" : 324,
+      "max_width" : 569,
+      "max_height" : 324
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "richtext_field" : "<h6>Remote Readiness</h6>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/Imported%20images/Screenshot-2022-04-24-224359.png",
+      "alt" : "Screenshot-2022-04-24-224359",
+      "loading" : "lazy",
+      "width" : 569,
+      "height" : 324,
+      "max_width" : 569,
+      "max_height" : 324
+    }
+  }, {
+    "richtext_field" : "<h6>Remote Readiness</h6>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/Imported%20images/Screenshot-2022-04-24-224359.png",
+      "alt" : "Screenshot-2022-04-24-224359",
+      "loading" : "lazy",
+      "width" : 569,
+      "height" : 324,
+      "max_width" : 569,
+      "max_height" : 324
+    }
+  }, {
+    "richtext_field" : "<h6>Remote Readiness</h6>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/Imported%20images/Screenshot-2022-04-24-224359.png",
+      "alt" : "Screenshot-2022-04-24-224359",
+      "loading" : "lazy",
+      "width" : 569,
+      "height" : 324,
+      "max_width" : 569,
+      "max_height" : 324
+    }
+  } ]
+} ]

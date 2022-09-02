@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Alternate%20Grinning%20Face:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 72134850834,
+  "label" : "About Team",
+  "is_available_for_new_content" : true
+}

@@ -1,0 +1,20 @@
+<section class="getin_touch__main">
+     <div class="container">
+        <div class="getin_touch__row">
+           <h1>
+             {{ module.header }}
+          </h1>
+          <h2>
+             {{ module.sub_text }}
+          </h2>
+												
+				{% if module.style.enable_arrow %}
+          <div class="scroll_down__inner">
+             <a href="#down">  
+                <img src="{{ get_asset_url('../../images/Anchor_down.svg') }}" alt="down arrow.">
+             </a>
+          </div>
+				{% endif %}
+       </div>
+  </div>
+</section>

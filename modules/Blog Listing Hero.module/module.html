@@ -1,0 +1,29 @@
+<section class="getin_touch__main">
+   <div class="container">
+      <div class="getin_touch__row">
+        {{ module.header }}
+										
+								{% if module.style.enable_form %}
+        <div class="blog_subscribe__row">
+            <div class="blogsubribe__inner">
+               {% form
+                  form_to_use="{{ module.form_field.form_id }}"
+                  response_response_type="{{ module.form_field.response_type }}"
+                  response_message="{{ module.form_field.message }}"
+                  response_redirect_id="{{ module.form_field.redirect_id }}"
+                  response_redirect_url="{{module.form_field.redirect_url}}"
+                  gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+                %}
+            </div>
+        </div>
+										{% endif %}
+										
+										
+         <div class="scroll_down__inner">
+            <a href="#down">  
+            <img src="{{ get_asset_url('../../images/Anchor_down.svg') }}" alt="">
+            </a>
+         </div>
+      </div>
+   </div>
+</section>

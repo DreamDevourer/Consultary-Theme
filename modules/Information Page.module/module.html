@@ -1,0 +1,9 @@
+<div class="privacy__policy">
+  {{ module.richtext_field }}
+</div>
+
+<style>
+{% scope_css %}
+				.privacy__policy { text-align: {{module.style.textalignment_field.text_align }};}
+{% end_scope_css %}
+</style>

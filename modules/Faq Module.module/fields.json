@@ -1,0 +1,88 @@
+[ {
+  "id" : "e0370a30-521c-6153-be0e-5eb5ff70f8ff",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Frequently Asked  <span>Questions</span>"
+}, {
+  "id" : "49892d28-2fca-bd39-5d99-d2f65b6c0999",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "61da8f03-438e-62fa-010e-282d6eedecc5",
+    "name" : "enable_main_title",
+    "display_width" : null,
+    "label" : "Enable main title",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_main_title" : true
+  }
+}, {
+  "id" : "0ff818be-9ca1-f7ab-78bf-df2745300923",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "3f207a26-d777-14b4-b494-c3c8ee4ea46f",
+    "name" : "text_field_1",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "How Long Does Onboarding Take? "
+  }, {
+    "id" : "84392a96-17f6-07bc-f23e-45e1d5d99e82",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet consectetur adipiscing elit.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "text_field_1" : "How Long Does Onboarding Take? ",
+    "richtext_field" : "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet consectetur adipiscing elit.</p>"
+  }, {
+    "text_field_1" : "How Long Does Onboarding Take? ",
+    "richtext_field" : "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet consectetur adipiscing elit.</p>"
+  }, {
+    "text_field_1" : "How Long Does Onboarding Take? ",
+    "richtext_field" : "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet consectetur adipiscing elit.</p>"
+  }, {
+    "text_field_1" : "How Long Does Onboarding Take? ",
+    "richtext_field" : "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet consectetur adipiscing elit.</p>"
+  } ]
+} ]

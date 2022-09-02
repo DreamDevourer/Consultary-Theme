@@ -1,0 +1,95 @@
+<section class="remote_readiness__main">
+      <div class="container">
+        <div class="remote_readiness__nav">
+           <ul>
+             {% for item in module.main_group %}
+               <li {% if loop.first %} class="current" {% endif %}>
+                <a href="#tab{{loop.index}}">{{ item.nav_name }}</a>
+               </li>
+             {% endfor %}
+          </ul>
+        </div>
+        <div class="remote_readiness__row">
+          {% for item in module.main_group %}
+           <div class="remote_readiness__column" id="tab{{loop.index}}">
+             
+             <div class="remote_readiness__rowmain">
+              <div class="remote_readiness__left">
+               {% if item.image_field.src %}
+               {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+               {% if item.image_field.size_type == 'auto' %}
+               {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+               {% elif item.image_field.size_type == 'auto_custom_max' %}
+               {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+               {% endif %}
+               {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+               <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+               {% endif %}
+             </div>
+             <div class="remote_readiness__right">
+               <div class="remote_text__row">
+                 <h3>
+                   {{ item.header }}
+                 </h3>
+                 {{ item.richtext_field }}
+
+               </div>
+               <div class="remote_text__customer">
+                   <div class="remote_text__icon">
+                     {% if item.sub_group.icon_.src %}
+                     {% set sizeAttrs = 'width="{{ item.sub_group.icon_.width }}" height="{{ item.sub_group.icon_.height }}"' %}
+                     {% if item.sub_group.icon_.size_type == 'auto' %}
+                     {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                     {% elif item.sub_group.icon_.size_type == 'auto_custom_max' %}
+                     {% set sizeAttrs = 'width="{{ item.sub_group.icon_.max_width }}" height="{{ item.sub_group.icon_.max_height }}" style="max-width: 100%; height: auto;"' %}
+                     {% endif %}
+                     {% set loadingAttr = item.sub_group.icon_.loading != 'disabled' ? 'loading="{{ item.sub_group.icon_.loading }}"' : '' %}
+                     <img src="{{ item.sub_group.icon_.src }}" alt="{{ item.sub_group.icon_.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                     {% endif %}
+                   </div>
+                    <div class="customer_satisfaction">
+                         {{ item.sub_group.richtext_field_1 }}
+                   </div>
+               </div>
+																	
+																	{% if module.style.enable_buttons %}
+               {% if item.button_text %}
+               <div class="remote_text__btn button_design">
+                 {% set href = item.button_link.url.href %}
+                 {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                 {% set href = "mailto:" + href %}
+                 {% endif %}
+                 <a href="{{ href }}"
+                    {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                    {% if item.button_link.rel %}rel="{{ item.button_link.rel }}"{% endif %}
+                    >
+                     {{ item.button_text }}
+                 </a>
+               </div>
+               {% endif %}
+															{% endif %}
+             </div>
+
+             </div>
+           </div>
+          {% endfor %}
+        </div>
+     </div>
+</section>
+
+{% require_js %}
+<script>
+$(".remote_readiness__nav li a").click(function(event) {
+  event.preventDefault();
+  $(this).parent().addClass("current");
+  $(this).parent().siblings().removeClass("current");
+  var tab = $(this).attr("href");
+  $(".remote_readiness__column").not(tab).css("display", "none");
+  $(tab).fadeIn();
+});
+</script>
+{% end_require_js %}
+
+
+
+

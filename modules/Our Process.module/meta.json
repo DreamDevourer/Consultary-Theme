@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Angle%20Double%20Right:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 71828943156,
+  "label" : "Our Process",
+  "is_available_for_new_content" : true
+}

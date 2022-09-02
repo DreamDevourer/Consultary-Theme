@@ -1,0 +1,83 @@
+[ {
+  "id" : "e58b3674-41c1-9e2d-3f09-fe8ebd6b87dc",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Best Culture <span>Knowledge</span>"
+}, {
+  "id" : "d3a44285-5bfd-945d-d478-cff27df34c68",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "fc862efb-1a70-32da-4e7e-ca0a7dc12e70",
+    "name" : "enable_read_more",
+    "display_width" : null,
+    "label" : "Enable Read More",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "777a352d-8939-ca86-a85c-4a77f5d46354",
+    "name" : "show_author",
+    "display_width" : null,
+    "label" : "Show Author",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "767c780d-a088-49de-1cdb-a831cbe8de0b",
+    "name" : "description_limit",
+    "display_width" : null,
+    "label" : "Description Limit",
+    "inline_help_text" : "This is the maximum number of characters.",
+    "required" : false,
+    "locked" : false,
+    "display" : "slider",
+    "min" : 50,
+    "max" : 300,
+    "step" : 5,
+    "type" : "number",
+    "default" : 180
+  }, {
+    "id" : "dd6f9a49-877c-5a24-161f-cfb48fdca24e",
+    "name" : "show_date",
+    "display_width" : null,
+    "label" : "Show date",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_read_more" : true,
+    "show_author" : true,
+    "description_limit" : 180,
+    "show_date" : true
+  }
+}, {
+  "id" : "6f4daa6a-a6e0-8900-561d-ff7a56987408",
+  "name" : "tag_field",
+  "display_width" : null,
+  "label" : "Tag",
+  "required" : false,
+  "locked" : false,
+  "tag_value" : "SLUG",
+  "type" : "tag"
+} ]

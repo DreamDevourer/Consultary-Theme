@@ -1,0 +1,28 @@
+<section class="what_client__main">
+   <div class="container">
+							
+							{% if module.style.enable_main_heading %}
+      <div class="what_client__header">
+        <h2>
+          {{ module.header }}
+        </h2>
+     </div>
+							{% endif %}
+							
+     <div class="what_client__row">
+       {% for item in module.field_group %}
+         <div class="what_client__column">
+             <div class="what_client__number">
+               {{ item.number }}
+            </div>
+            <div class="what_client__text">
+                <h5>
+                  {{ item.text_field }}
+              </h5>
+              <span>{{ item.richtext_field }}</span>
+            </div>
+       </div>
+       {% endfor %}
+     </div>
+  </div>
+</section>

@@ -1,0 +1,293 @@
+[ {
+  "id" : "dbdae7ff-60c4-8a5d-99d1-641336629371",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d714edbd-e822-9a58-8fae-ce00c1a1ba82",
+    "name" : "enable_buttons",
+    "display_width" : null,
+    "label" : "Enable buttons",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_buttons" : true
+  }
+}, {
+  "id" : "456be3f2-bae5-c5f3-4550-e3e636f345c1",
+  "name" : "main_group",
+  "display_width" : null,
+  "label" : "Main group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "d4d6b63c-a940-d45f-fca9-3ed663ada585",
+    "name" : "nav_name",
+    "display_width" : null,
+    "label" : "Nav Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Remote Readiness"
+  }, {
+    "id" : "2dbeea5f-cc00-03d3-65f8-5f67daede043",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "exact",
+      "src" : "https://www.remotish.agency/hubfs/unsplash_YUuSAJkS3U4_neq%20(1).png",
+      "alt" : "unsplash_YUuSAJkS3U4_neq (1)",
+      "loading" : "lazy",
+      "width" : 397,
+      "height" : 364,
+      "max_width" : 397,
+      "max_height" : 364
+    }
+  }, {
+    "id" : "a63e881f-85cb-e8a0-bc68-a764f57bba45",
+    "name" : "header",
+    "display_width" : null,
+    "label" : "Header",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Remote Readiness"
+  }, {
+    "id" : "8d2d91f4-2f29-60f0-3194-bcd118bfd732",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin feugiat mattis sed felis lectus egestas sagittis lorem. Dolor sed in cursus:</p>"
+  }, {
+    "id" : "10f442a2-3727-8a13-b555-65e1daffa5b0",
+    "name" : "sub_group",
+    "display_width" : null,
+    "label" : "Sub group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "cc7a04ae-6e8c-3ffc-3c85-7efbdbb1d8db",
+      "name" : "icon_",
+      "display_width" : null,
+      "label" : "Icon ",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "exact",
+        "src" : "https://cdn2.hubspot.net/hubfs/21429431/icons.png",
+        "alt" : "icons",
+        "loading" : "lazy",
+        "width" : 85,
+        "height" : 84,
+        "max_width" : 85,
+        "max_height" : 84
+      }
+    }, {
+      "id" : "1621c913-6992-2f07-41ec-0f92c3a74116",
+      "name" : "richtext_field_1",
+      "display_width" : null,
+      "label" : "Rich text",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h3>Customer Satisfaction</h3>\n<p>Is your organization ready to be remote or struggling with a shift to remote working?</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "icon_" : {
+        "size_type" : "exact",
+        "src" : "https://cdn2.hubspot.net/hubfs/21429431/icons.png",
+        "alt" : "icons",
+        "loading" : "lazy",
+        "width" : 85,
+        "height" : 84,
+        "max_width" : 85,
+        "max_height" : 84
+      },
+      "richtext_field_1" : "<h3>Customer Satisfaction</h3>\n<p>Is your organization ready to be remote or struggling with a shift to remote working?</p>"
+    }
+  }, {
+    "id" : "53a39e07-37ff-5ced-cb46-f6e54c91e720",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Learn More"
+  }, {
+    "id" : "7e3a2245-3e9b-62e0-e883-183e1b2babda",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "nav_name" : "Remote Readiness",
+    "image_field" : {
+      "size_type" : "exact",
+      "src" : "https://www.remotish.agency/hubfs/unsplash_YUuSAJkS3U4_neq%20(1).png",
+      "alt" : "unsplash_YUuSAJkS3U4_neq (1)",
+      "loading" : "lazy",
+      "width" : 397,
+      "height" : 364,
+      "max_width" : 397,
+      "max_height" : 364
+    },
+    "header" : "Remote Readiness",
+    "richtext_field" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin feugiat mattis sed felis lectus egestas sagittis lorem. Dolor sed in cursus:</p>",
+    "sub_group" : {
+      "icon_" : {
+        "size_type" : "exact",
+        "src" : "https://cdn2.hubspot.net/hubfs/21429431/icons.png",
+        "alt" : "icons",
+        "loading" : "lazy",
+        "width" : 85,
+        "height" : 84,
+        "max_width" : 85,
+        "max_height" : 84
+      },
+      "richtext_field_1" : "<h3>Customer Satisfaction</h3>\n<p>Is your organization ready to be remote or struggling with a shift to remote working?</p>"
+    },
+    "button_text" : "Learn More",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "nav_name" : "Remote Readiness",
+    "image_field" : {
+      "size_type" : "exact",
+      "src" : "https://www.remotish.agency/hubfs/unsplash_YUuSAJkS3U4_neq%20(1).png",
+      "alt" : "unsplash_YUuSAJkS3U4_neq (1)",
+      "loading" : "lazy",
+      "width" : 397,
+      "height" : 364,
+      "max_width" : 397,
+      "max_height" : 364
+    },
+    "header" : "Remote Readiness",
+    "richtext_field" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin feugiat mattis sed felis lectus egestas sagittis lorem. Dolor sed in cursus:</p>",
+    "sub_group" : {
+      "icon_" : {
+        "size_type" : "exact",
+        "src" : "https://cdn2.hubspot.net/hubfs/21429431/icons.png",
+        "alt" : "icons",
+        "loading" : "lazy",
+        "width" : 85,
+        "height" : 84,
+        "max_width" : 85,
+        "max_height" : 84
+      },
+      "richtext_field_1" : "<h3>Customer Satisfaction</h3>\n<p>Is your organization ready to be remote or struggling with a shift to remote working?</p>"
+    },
+    "button_text" : "Learn More",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "nav_name" : "Remote Readiness",
+    "image_field" : {
+      "size_type" : "exact",
+      "src" : "https://www.remotish.agency/hubfs/unsplash_YUuSAJkS3U4_neq%20(1).png",
+      "alt" : "unsplash_YUuSAJkS3U4_neq (1)",
+      "loading" : "lazy",
+      "width" : 397,
+      "height" : 364,
+      "max_width" : 397,
+      "max_height" : 364
+    },
+    "header" : "Remote Readiness",
+    "richtext_field" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin feugiat mattis sed felis lectus egestas sagittis lorem. Dolor sed in cursus:</p>",
+    "sub_group" : {
+      "icon_" : {
+        "size_type" : "exact",
+        "src" : "https://cdn2.hubspot.net/hubfs/21429431/icons.png",
+        "alt" : "icons",
+        "loading" : "lazy",
+        "width" : 85,
+        "height" : 84,
+        "max_width" : 85,
+        "max_height" : 84
+      },
+      "richtext_field_1" : "<h3>Customer Satisfaction</h3>\n<p>Is your organization ready to be remote or struggling with a shift to remote working?</p>"
+    },
+    "button_text" : "Learn More",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

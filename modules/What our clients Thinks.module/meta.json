@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:House%20User:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 71582305293,
+  "label" : "What our clients Thinks",
+  "is_available_for_new_content" : true
+}

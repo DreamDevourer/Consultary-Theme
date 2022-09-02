@@ -1,0 +1,61 @@
+[ {
+  "id" : "33b8e7b7-ad16-5e40-b054-143b2eada76f",
+  "name" : "left_text",
+  "display_width" : null,
+  "label" : "Left Text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Let’s <span>Talk</span>?</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat donec cursus vel volutpat adipiscing. Id mi mattis fringilla amet risus, augue sed vitae amet.</p>\n<ul>\n<li>Lorem ipsum dolor sit amet, consectetur.</li>\n<li>Lorem ipsum dolor sit amet, consectetur.</li>\n<li>Lorem ipsum dolor sit amet, consectetur.</li>\n</ul>"
+}, {
+  "id" : "9fbda6b2-8b26-ed5d-c147-d39e0bc057d2",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form.",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "7bad3679-3c12-4cc6-a9e1-d37d97f5c652",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "259939ee-dfb9-0c3f-9383-8f53b528307f",
+    "name" : "enable_form",
+    "display_width" : null,
+    "label" : "Enable Form",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_form" : true
+  }
+}, {
+  "id" : "4d93b01b-76da-8bc5-d63c-94ad51098a92",
+  "name" : "section_id",
+  "display_width" : null,
+  "label" : "Section ID",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "down"
+} ]

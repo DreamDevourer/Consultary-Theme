@@ -1,0 +1,68 @@
+<div class="innervideo_cover__main">
+  {{ require_js("https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js") }}
+{{ require_css("https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css") }}
+
+<div class="home_hero__videomain inner_video__main">
+  <div class="home_hero__video" style="background-image:url('{{ module.style.thumbnail.src }}')">
+    <span>
+
+      {% if module.style.play_icon.src %}
+      {% set sizeAttrs = 'width="{{ module.style.play_icon.width }}" height="{{ module.style.play_icon.height }}"' %}
+      {% if module.style.play_icon.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.style.play_icon.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.style.play_icon.max_width }}" height="{{ module.style.play_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.style.play_icon.loading != 'disabled' ? 'loading="{{ module.style.play_icon.loading }}"' : '' %}
+      <img src="{{ module.style.play_icon.src }}" alt="{{ module.style.play_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+
+    </span> 
+    <a class="position_link" data-fancybox href="#video">
+
+    </a>
+    <div id="down">
+      <div class="video_code__main" style="display:none;" id="video">
+               <iframe width="560" height="450" src="{{ module.youtube_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="innervideo_text__main">
+     <div class="container">
+         <div class="innervideo_text__row">
+            {{ module.richtext_field }}
+         </div>
+       <div class="innervideo_services__main">
+         {% for item in module.field_group %}
+         
+           <div class="innervideo_services__column">
+               <div class="innervideo_services__icon">
+                 {% if item.icon.src %}
+                 {% set sizeAttrs = 'width="{{ item.icon.width }}" height="{{ item.icon.height }}"' %}
+                 {% if item.icon.size_type == 'auto' %}
+                 {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                 {% elif item.icon.size_type == 'auto_custom_max' %}
+                 {% set sizeAttrs = 'width="{{ item.icon.max_width }}" height="{{ item.icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                 {% endif %}
+                 {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading }}"' : '' %}
+                 <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                 {% endif %} 
+                 
+                 <div class="innervideo_services__text">
+                    {{ item.richtext_field_1 }}
+                 </div>
+             </div>
+             
+           
+           </div>
+         {% endfor %}
+         
+       </div>
+    </div>
+</section>
+
+</div>

@@ -1,0 +1,61 @@
+<section class="prices_cultures__wrapper">
+  <div class="container">
+						
+						{% if module.style.enable_main_heading %}
+    <div class="prices_cultures_had">
+       {{ module.header }}
+    </div>
+						{% endif %}
+						
+						
+    <div class="service-tab">
+      <div class="">
+      <ul id="tabs-menu" class="service-list-tab">
+        {% for item in module.field_group %}
+        <li class="tab-content-1"><a href="#stab{{loop.index}}">{{ item.text_field }}</a></li>
+        {% endfor %}
+        
+      </ul>
+      </div>
+      <div class="service-content-tab">
+        {% for item in module.field_group %}
+        <div id="stab{{loop.index}}" class="content-main-tab">
+          <div class="tab-content-2">
+            <span>{{ item.text_2 }}</span>
+            <h2>
+             {{ item.price }}
+            </h2>
+            <div class="button_design">
+              
+              {% set href = item.button_link.url.href %}
+              {% if item.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if item.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if item.button_link.rel %}rel="{{ item.button_link.rel }}"{% endif %}
+                 >
+                  {{ item.button_text }}
+              </a>
+            </div>
+          </div>
+          <div class="tabing-link">
+              {{ item.richtext_field }}
+          </div>
+												
+												{% if module.style.enable_discount %}
+          <div class="tabs-sprices">
+              {{ item.discount }}
+          </div>
+												{% endif %}
+												
+        </div>
+       {% endfor %} 
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</section>

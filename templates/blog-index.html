@@ -1,0 +1,121 @@
+<!--
+  templateType: blog_listing
+  isAvailableForNewContent: true
+  label: blog listing
+  screenshotPath: ../images/Thumbnails/BlogC.png
+-->
+
+{% set default_header = "default_header" %}
+{% set template_css = "../../css/templates/blog.css" %}
+{% extends "./layouts/base.html" %}
+
+{% set default_header = "default_header" %}
+  
+
+
+
+{% block body %}
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--blog-index"
+%}
+
+  {# Hero banner #}
+
+
+ {% dnd_section
+ 
+  vertical_alignment="MIDDLE",
+  full_width = true,
+  padding= {
+      top : "0",
+      left : "0",
+      right: "0",
+      bottom: "0"
+   
+  }
+  
+%}
+  {% dnd_module
+    path="../modules/Blog Listing Hero",
+   
+  %}
+  {% end_dnd_module %}
+  
+{% end_dnd_section %}
+
+
+
+ {% dnd_section
+ 
+  vertical_alignment="MIDDLE",
+  full_width = true,
+  padding= {
+      top : "0",
+      left : "0",
+      right: "0",
+      bottom: "0"
+   
+  }
+  
+%}
+  {% dnd_module
+    path="../modules/Best Culture Knowledge",
+   
+  %}
+  {% end_dnd_module %}
+  
+{% end_dnd_section %}
+
+
+
+
+ {% dnd_section
+ 
+  vertical_alignment="MIDDLE",
+  full_width = true,
+  padding= {
+      top : "0",
+      left : "0",
+      right: "0",
+      bottom: "0"
+   
+  }
+  
+%}
+  {% dnd_module
+    path="../modules/Recent Stories",
+   
+  %}
+  {% end_dnd_module %}
+  
+{% end_dnd_section %}
+
+
+
+
+
+
+  {# Blog listings and pagination #}
+
+  {% dnd_section
+    vertical_alignment="TOP"
+      padding= {
+      top : "0",
+      left : "0",
+      right: "0",
+      bottom: "0"
+   
+  }
+  %}
+    {% dnd_column %}
+      
+      {% dnd_row %}
+        {% dnd_module path="../modules/blog-pagination" %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+
+{% end_dnd_area %}
+{% endblock body %}

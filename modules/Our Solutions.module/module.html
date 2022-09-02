@@ -1,0 +1,55 @@
+<section class="our_soulution__main"> 
+     <div class="container">
+        <div class="our_soulution__row">
+          
+            <div class="our_soulution__left">
+               <div class="our_soulution__text">
+                  {{ module.left_text }}
+              </div>
+              <div class="our_soulution__btn">
+																		
+																		{% if module.style.enable_buttons %}
+                 <div class="button_design">
+                   {% set href = module.button_link.url.href %}
+                   {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                   {% set href = "mailto:" + href %}
+                   {% endif %}
+                   <a href="{{ href }}"
+                      {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                      {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+                      >
+                     {{ module.button_text }}
+                   </a>
+                </div>
+                <div class="button_border">
+                  {% set href = module.button_two_link.url.href %}
+                  {% if module.button_two_link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}"
+                     {% if module.button_two_link.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if module.button_two_link.rel %}rel="{{ module.button_two_link.rel }}"{% endif %}
+                     >
+                    {{ module.button_text_2 }}
+                  </a>
+                </div>
+																		{% endif %}
+              </div>
+            </div>
+          
+            <div class="our_soulution__right">
+                {% if module.image_field.src %}
+                {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+                {% if module.image_field.size_type == 'auto' %}
+                {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif module.image_field.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+                <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+            </div>
+          
+       </div>
+  </div>
+</section>

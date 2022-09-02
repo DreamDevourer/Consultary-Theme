@@ -1,0 +1,18 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Address%20Card",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 71932759471,
+  "css_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/21429431/slick.css",
+    "autoload" : true,
+    "name" : "slick.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "https://cdn2.hubspot.net/hubfs/21429431/slick.js",
+    "autoload" : true,
+    "name" : "slick.js"
+  } ],
+  "label" : "Testimonial Module",
+  "is_available_for_new_content" : true
+}

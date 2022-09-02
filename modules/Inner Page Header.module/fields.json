@@ -1,0 +1,49 @@
+[ {
+  "id" : "909ec0b6-0c0d-21f1-1b85-c048630aee04",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get in touch"
+}, {
+  "id" : "ff39041a-e212-9bd3-5adc-505d0d06e67c",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "fbdbd356-dd58-f1e1-8f55-c8d556992dd0",
+    "name" : "enable_arrow",
+    "display_width" : null,
+    "label" : "Enable arrow",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_arrow" : true
+  }
+}, {
+  "id" : "ca441ee6-3b82-a249-9d51-eb72914a8b35",
+  "name" : "sub_text",
+  "display_width" : null,
+  "label" : "Sub Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Contact Us"
+} ]

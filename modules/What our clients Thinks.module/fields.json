@@ -1,0 +1,100 @@
+[ {
+  "id" : "9f05d09a-5986-d090-0d84-e7d4a0c3df1b",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What our clients <span>thinks of us</span> ?"
+}, {
+  "id" : "338cf7ed-9b77-2eeb-fa9f-c519e5a53e64",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5eb24250-67bd-1bce-54ec-67073d0da348",
+    "name" : "enable_main_heading",
+    "display_width" : null,
+    "label" : "Enable main heading",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_main_heading" : true
+  }
+}, {
+  "id" : "5137b014-d263-1dd3-1a33-7cf2965ef832",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "e6460ae8-5116-2ab3-b0a6-c0e02e225480",
+    "name" : "number",
+    "display_width" : null,
+    "label" : "Number",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "1000+"
+  }, {
+    "id" : "9f76a2af-7639-fbdb-e431-84fa5bdf0913",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Customer Satisfaction"
+  }, {
+    "id" : "84d9a8fc-57d5-7f19-5dc7-46b6d6077414",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Neque pellentesque amet risus porttitor.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "number" : "1000+",
+    "text_field" : "Customer Satisfaction",
+    "richtext_field" : "<p>Neque pellentesque amet risus porttitor.</p>"
+  }, {
+    "number" : "1000+",
+    "text_field" : "Customer Satisfaction",
+    "richtext_field" : "<p>Neque pellentesque amet risus porttitor.</p>"
+  }, {
+    "number" : "1000+",
+    "text_field" : "Customer Satisfaction",
+    "richtext_field" : "<p>Neque pellentesque amet risus porttitor.</p>"
+  } ]
+} ]

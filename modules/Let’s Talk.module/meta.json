@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Spock%20(Hand):SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 71897481251,
+  "label" : "Let’s Talk",
+  "is_available_for_new_content" : true
+}

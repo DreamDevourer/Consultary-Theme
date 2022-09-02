@@ -1,0 +1,27 @@
+<!--
+  templateType: section
+  label: Hero Section
+  isAvailableForNewContent: true
+  description: "Standard hero section."
+  screenshotPath: ../images/Thumbnail.png
+-->
+{% dnd_section
+ 
+  vertical_alignment="MIDDLE",
+  full_width = true,
+  padding= {
+      top : "0",
+      left : "0",
+      right: "0",
+      bottom: "0"
+   
+  }
+  
+%}
+  {% dnd_module
+    path="../modules/hero",
+   
+  %}
+  {% end_dnd_module %}
+  
+{% end_dnd_section %}

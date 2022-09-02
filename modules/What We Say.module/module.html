@@ -1,0 +1,45 @@
+<section class="Whatwesay__main">
+    <div class="container">
+        <div class="Whatwesay__header">
+												
+												{% if module.style.enable_main_heading %}
+           <h2>
+              {{ module.header }}
+           </h2>
+												{% endif %}
+												
+												{% if module.style.enable_read_more_button %}
+          <div class="button_design Whatwesay__btn">
+            {% set href = module.button_link.url.href %}
+            {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}"
+               {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+               {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+               >
+                 {{ module.button_text }}
+            </a>
+          </div>
+												{% endif %}
+												
+         </div>
+        <div class="Whatwesay__row">
+          {% set recent_posts = blog_recent_posts(module.blog_field, 3) %}
+          {% for recent_post in recent_posts %}
+  
+            <div class=" Whatwesay__column">
+               <div class="Whatwesay__img">
+                   <img src="{{ recent_post.featured_image }}" loading="lazy" height="293" width="300">
+               </div>
+              <div class="Whatwesay__text">
+                   <div class="">
+                      {{ recent_post.name }}
+                   </div>
+                   <span>  {{ recent_post.publish_date|datetimeformat('%b %d, %y') }}  </span>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+     </div>
+</section>

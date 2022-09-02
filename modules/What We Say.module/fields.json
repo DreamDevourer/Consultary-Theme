@@ -1,0 +1,87 @@
+[ {
+  "id" : "470471d4-b2c9-a520-d429-057023e477ba",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What We <span>Say</span>"
+}, {
+  "id" : "d224015b-231b-5759-ee0e-7765b09ca98c",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Read More"
+}, {
+  "id" : "d7601e01-f002-0e16-d879-48f96a676b1b",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "f778d615-b9c7-7d7a-e4c3-e3439bf81960",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c036a615-54d3-b839-e9f1-09636fe14074",
+    "name" : "enable_read_more_button",
+    "display_width" : null,
+    "label" : "Enable Button",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "65e15f7e-c2b4-790b-5e15-cbe7108c5ee0",
+    "name" : "enable_main_heading",
+    "display_width" : null,
+    "label" : "Enable main heading",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_read_more_button" : true,
+    "enable_main_heading" : true
+  }
+}, {
+  "id" : "d6665ec4-9d72-e059-13d8-3fe000a85e41",
+  "name" : "blog_field",
+  "display_width" : null,
+  "label" : "Blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog"
+} ]

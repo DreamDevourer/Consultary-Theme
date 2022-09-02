@@ -1,0 +1,34 @@
+<style>
+				{% scope_css %}
+				
+				{% if module.style.disable_black_and_white_filter %}
+				.logos_cover, .logos_cover img {
+								filter: grayscale(0);
+				}
+				{% endif %}
+				
+				{% end_scope_css %}
+</style>
+
+<section class="main_logo__wrapper">
+  <div class="container">
+    <div class="logo_top_row">
+      <div class="logo_flex-row">
+        {% for item in module.field_group %}
+            <div class="logos_cover">
+                  {% if item.image_field.src %}
+                  {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                  {% if item.image_field.size_type == 'auto' %}
+                  {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                  {% elif item.image_field.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                  <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+            </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

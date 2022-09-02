@@ -1,0 +1,13 @@
+<div class="button_design" style="text-align:{{ module.alignment }}">
+    {% set href = module.button_link.url.href %}
+    {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}"
+       {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+       >
+       {{ module.button_text }}
+    </a>
+</div> 
+

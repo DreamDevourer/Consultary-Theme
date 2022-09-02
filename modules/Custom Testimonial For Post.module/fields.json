@@ -1,0 +1,35 @@
+[ {
+  "id" : "666f381a-de94-420c-a568-339928576aff",
+  "name" : "boolean_field",
+  "display_width" : null,
+  "label" : "Boolean",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "ad0a1555-0f83-f210-f1bc-50b6ee0903c1",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "\"The real competitive advantage in any business is one word only, which is ’people’ \""
+}, {
+  "id" : "72f35cb5-5dbd-6410-b55f-7e025b676862",
+  "name" : "testimonial_name",
+  "display_width" : null,
+  "label" : "Testimonial Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<span>Stefan Lynton</span>, Culture Strategist"
+} ]

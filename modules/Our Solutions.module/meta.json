@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Alternate%20Cloud%20Download:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 71580894071,
+  "label" : "Our Solutions",
+  "is_available_for_new_content" : true
+}

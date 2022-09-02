@@ -1,0 +1,97 @@
+<section class="meetour_team__main">
+    <div class="container">
+       <div class="meetour_team__mainheader">
+											
+											{% if module.style.enable_main_heading %}
+         <div class="meetour_team__title">
+             {{ module.header }}
+         </div>
+											{% endif %}
+											
+											{% if module.style.enable_button %}
+         <div class="button_design meetour_team__btn">
+           {% set href = module.button_link.url.href %}
+           {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+           {% set href = "mailto:" + href %}
+           {% endif %}
+           <a href="{{ href }}"
+              {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+              {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+              >
+             {{ module.button_text }}
+           </a>
+         </div>
+											{% endif %}
+											
+      </div>
+       <div class="meetour_team__row">
+         {% for item in module.field_group %}
+           <div class="meetour_team__column">
+               <div class="meetour_team__imgmain">
+                 {% if item.image_field.src %}
+                 {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                 {% if item.image_field.size_type == 'auto' %}
+                 {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                 {% elif item.image_field.size_type == 'auto_custom_max' %}
+                 {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                 {% endif %}
+                 {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                 <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                 {% endif %}
+               </div>
+               <div class="meetour_team__details">
+                  <div class="meetour_team__header">
+                     <h5>{{ item.profile_name }}</h5>
+                    <p>
+                      {{ item.profile_post }}
+                    </p>
+                     
+                 </div>
+                 <div class="profile_post_social">
+                    <ul>
+                      {% for item2 in item.social %}
+                      <li> 
+                        {% set href = item2.link_field.url.href %}
+                        {% if item2.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                        {% endif %}
+                        <a href="{{ href }}"
+                           {% if item2.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                           {% if item2.link_field.rel %}rel="{{ item2.link_field.rel }}"{% endif %}
+                           >
+                              		{% icon
+                                      name="{{ item2.icon_field.name }}"
+                                      style="{{ item2.icon_field.type }}"
+                                      unicode="{{ item2.icon_field.unicode }}"
+                                      icon_set="{{ item2.icon_field.icon_set }}"
+                                    %}
+                        </a>
+                      </li>
+                      	{% endfor %}
+                   </ul>
+                 </div>
+               </div>
+             
+             
+             {% set href = item.link_field_1.url.href %}
+             {% if item.link_field_1.url.type is equalto "EMAIL_ADDRESS" %}
+             {% set href = "mailto:" + href %}
+             {% endif %}
+             <a class="position_link" href="{{ href }}"
+                {% if item.link_field_1.open_in_new_tab %}target="_blank"{% endif %}
+                {% if item.link_field_1.rel %}rel="{{ item.link_field_1.rel }}"{% endif %}
+                >
+
+             </a>
+             
+             
+           </div>
+         {% endfor %}
+      </div>
+  </div>
+</section>
+
+
+
+
+

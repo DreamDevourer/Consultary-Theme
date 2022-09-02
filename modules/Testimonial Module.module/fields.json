@@ -1,0 +1,121 @@
+[ {
+  "id" : "6e4ac042-3752-2074-b916-599a292c297b",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0a444f1d-ef18-2d7e-c165-692632c9db7f",
+    "name" : "enable_logo_individual",
+    "display_width" : null,
+    "label" : "Enable logo/individual",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_logo_individual" : true
+  }
+}, {
+  "id" : "2ae030aa-cf45-e21a-a44e-3cd9dbc936e6",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "23834e19-efcf-0f2c-79ad-e135c4d881f1",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h6>Culture is an Invisible and Powerful Force</h6>\n<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet consectetur adipiscing elit.</p>"
+  }, {
+    "id" : "f0e14528-f890-baa5-fc1e-a730f0c4151e",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/Imported%20images/Rectangle%2025.png",
+      "alt" : "Rectangle 25",
+      "loading" : "lazy",
+      "width" : 60,
+      "height" : 60,
+      "max_width" : 60,
+      "max_height" : 60
+    }
+  }, {
+    "id" : "c080bdee-63ec-52d8-38aa-1dc92f362815",
+    "name" : "richtext_field_1",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h4>Stefan Lynton</h4>\n<p>Culture Strategist</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "richtext_field" : "<h6>Culture is an Invisible and Powerful Force</h6>\n<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet consectetur adipiscing elit.</p>",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/Imported%20images/Rectangle%2025.png",
+      "alt" : "Rectangle 25",
+      "loading" : "lazy",
+      "width" : 60,
+      "height" : 60,
+      "max_width" : 60,
+      "max_height" : 60
+    },
+    "richtext_field_1" : "<h4>Stefan Lynton</h4>\n<p>Culture Strategist</p>"
+  }, {
+    "richtext_field" : "<h6>Culture is an Invisible and Powerful Force</h6>\n<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet consectetur adipiscing elit.</p>",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/Imported%20images/Rectangle%2025.png",
+      "alt" : "Rectangle 25",
+      "loading" : "lazy",
+      "width" : 60,
+      "height" : 60,
+      "max_width" : 60,
+      "max_height" : 60
+    },
+    "richtext_field_1" : "<h4>Stefan Lynton</h4>\n<p>Culture Strategist</p>"
+  }, {
+    "richtext_field" : "<h6>Culture is an Invisible and Powerful Force</h6>\n<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum dolor sit amet consectetur adipiscing elit.</p>",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/21429431/Imported%20images/Rectangle%2025.png",
+      "alt" : "Rectangle 25",
+      "loading" : "lazy",
+      "width" : 60,
+      "height" : 60,
+      "max_width" : 60,
+      "max_height" : 60
+    },
+    "richtext_field_1" : "<h4>Stefan Lynton</h4>\n<p>Culture Strategist</p>"
+  } ]
+} ]

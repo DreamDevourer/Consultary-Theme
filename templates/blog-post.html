@@ -1,0 +1,231 @@
+<!--
+  templateType: blog_post
+  isAvailableForNewContent: true
+  label: blog post
+  screenshotPath: ../images/Thumbnails/ArticleC.png
+-->
+{% set template_css = "../../css/templates/blog.css" %}
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+<div class="body-container body-container--blog-post">
+
+<!-- Hero Inner -->
+  
+<div class="home_herocover__main">
+    <section class="home_hero__main" style="background:linear-gradient(to bottom right, rgba(18, 137, 219, 0.7), rgba(114, 202, 128, 0.7))">
+    <div class="container">
+      <div class="home_hero__row">
+        <div class="home_hero__text">
+          <h1>{{ content.name }}</h1>
+          <div class="home_post__author">
+             By  {{ content.blog_post_author.display_name }}
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  
+  <div class="home_hero__videomain">
+   <div class="home_hero__video" style="background-image:url('{{ content.featured_image }}')">
+    
+   </div>
+</div>
+</div>
+  
+  
+<!-- Hero Inner -->
+  
+{% module "custom_testimonial" path="../modules/Custom Testimonial For Post", label="Custom Testimonial For Post" export_to_template_context=True %}
+  
+<!-- Custome Inner -->  
+ 
+	<!-- HTML to show when checked -->
+  
+ {% if widget_data.custom_testimonial.body.boolean_field %}
+<section class="testimonial__main">
+   <div class="container">
+      <div class="testimonial__row">
+         <div class="testimonial__quote">
+            <img src="{{ get_asset_url('../images/Vector 9.svg') }}" alt="icon">
+         </div>
+         <div class="testimonial__text">
+            <p>{{ widget_data.custom_testimonial.body.text_field }} </p>
+         </div>
+         <div class="testimonial__name">
+           
+           {{ widget_data.custom_testimonial.body.testimonial_name }}
+         </div>
+      </div>
+   </div>
+</section>
+{% endif %}
+<!-- Inner Custome Inner -->  
+  
+  
+<div class="blog_post__bodymain">
+    <div class="blog-post__body">
+       {{ content.post_body }}
+    </div>
+   
+    <div class="blog-post__tags">
+          <div class="blog-post__dates">
+             Posted on {{ content.publish_date|datetimeformat('%b %d, %y') }} <br> 
+            Last updated on {{ content.updated|datetimeformat('%b %d, %y') }}
+          </div>
+          {% for tag in content.tag_list %}
+            <a class="blog-post__tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}" rel="tag">{{ tag.name }}</a>{% if not loop.last %},{% endif %}
+          {% endfor %}
+     </div>
+  
+   <div class="talkto_expert__bodymain">
+       <div class="button_design">
+           <a href="#">Talk to an expert</a>
+       </div>
+     
+        <div class="talkto_expert__author">
+            <div class="talkto_author__left">
+              <img src="{{ content.blog_post_author.avatar }}" alt=" {{ content.blog_post_author.display_name }}">
+            </div>
+             <div class="talkto_author__right">
+                 <div class="talkto_author__name">
+                    Hey there, I’m <span>{{ content.blog_post_author.display_name }}</span>
+                 </div>
+                 <div class="talkto_author__post">
+                     <p>
+                       {{ content.blog_post_author.bio }}
+                     </p>
+                 </div>
+               <div class="talkto_author__social">
+                   <ul>
+                     {% if content.blog_post_author.facebook  %}
+                     <li> 
+                       <a href="{{ content.blog_post_author.facebook }}">
+                         <img src="{{ get_asset_url('../images/Vector 11.svg') }}" alt="facebook">
+                       </a>
+                     </li>
+                     {% endif %}
+                    
+                     {% if content.blog_post_author.linkedin %}
+                      <li> 
+                       <a href="{{ content.blog_post_author.linkedin }}">
+                         <img src="{{ get_asset_url('../images/Vector 13.svg') }}" alt="linkedin">
+                       </a>
+                     </li>
+                     {% endif %}
+                     
+                    
+                 </ul>
+               </div>
+            </div>
+        </div>
+     
+     
+     
+   </div>
+</div>
+  
+  
+  
+  <div class="blog-comments__main">
+      <h2>
+        Any <span>Thoughts?</span>
+     </h2>
+     {% if group.allow_comments %}
+      <div class="blog-comments">
+        {% module "blog_comments"
+          path="@hubspot/blog_comments",
+          label="Blog comments"
+        %}
+      </div>
+    {% endif %}
+  </div>
+  
+  
+  
+  
+  {# Blog post #}
+{#
+<div class="content-wrapper">
+    <article class="blog-post">
+      <h1>{{ content.name }}</h1>
+      <div class="blog-post__meta">
+        <a href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}" rel="author">
+          {{ content.blog_post_author.display_name }}
+        </a>
+        <time datetime="{{ content.publish_date }}" class="blog-post__timestamp">
+          {{ content.publish_date_localized }}
+        </time>
+      </div>
+    
+      {% if content.tag_list %}
+        <div class="blog-post__tags">
+          {% icon
+            name="tag",
+            purpose="decorative",
+            style="SOLID"
+          %}
+          {% for tag in content.tag_list %}
+            <a class="blog-post__tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}" rel="tag">{{ tag.name }}</a>{% if not loop.last %},{% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </article>
+    {% if group.allow_comments %}
+      <div class="blog-comments">
+        {% module "blog_comments"
+          path="@hubspot/blog_comments",
+          label="Blog comments"
+        %}
+      </div>
+    {% endif %}
+  </div> #}
+
+  {# Recent posts listing #}
+
+  {# This macro is used to format each recent post card and gets passed to the related_blog_posts HubL tag below #}
+
+  
+  
+  
+  {#
+  {% macro related_posts(post, count, total) %}
+    {% if count == 1 %}
+      <section class="blog-related-posts">
+        <div class="content-wrapper">
+          <h2>Read On</h2>
+          <div class="blog-related-posts__list">
+    {% endif %}
+            <article class="blog-related-posts__post" aria-label="Blog post summary: {{ post.name }}">
+              {% if post.featured_image %}
+                <a class="blog-related-posts__post-image-wrapper" href="{{ post.absolute_url }}" aria-label="{% if post.featured_image_alt_text %} Featured image: {{ post.featured_image_alt_text }} - {% endif %}Read full post: {{ post.name }}">
+                  <img class="blog-related-posts__image" src="{{ post.featured_image }}" loading="lazy" width="352" alt="{{ post.featured_image_alt_text }}">
+                </a>
+              {% endif %}
+              <div class="blog-related-posts__content">
+                <h3 class="blog-related-posts__title">
+                  <a class="blog-related-posts__title-link" href="{{ post.absolute_url }}">{{ post.name }}</a></h3>
+                  {{ post.post_summary|truncatehtml(100) }}
+              </div>
+            </article>
+      {% if count == total %}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+  {% endmacro %}
+
+  {% related_blog_posts
+    limit=3,
+    no_wrapper=True,
+    post_formatter="related_posts"
+  %}
+  
+  #}
+  
+  
+  
+
+</div>
+{% endblock body %}

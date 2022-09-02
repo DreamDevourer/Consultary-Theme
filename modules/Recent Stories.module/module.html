@@ -1,0 +1,33 @@
+<section class="Whatwesay__main recent_stories__main">
+   <div class="container">
+      <div class="Whatwesay__header">
+										{% if module.style.enable_main_heading %}
+         <h2>
+           {{ module.header }}
+         </h2>
+										{% endif %}
+        
+      </div>
+      <div class="Whatwesay__row">
+          {% for content in contents %}
+         <div class="Whatwesay__column">
+            <div class="Whatwesay__img" style="background-image:url('{{ content.featured_image }}')">
+            </div>
+            <div class="Whatwesay__text">
+               <div class="Whatwesay__titletext">
+                 {{ content.name }}
+               </div>
+               <span> {{ content.publish_date|datetimeformat('%b %d, %y') }}   </span>
+            </div>
+           <a href="{{ content.absolute_url }}" class="position_link"> </a>
+         </div>
+        {% endfor %}
+        
+        
+        
+      </div>
+   </div>
+</section>
+
+
+

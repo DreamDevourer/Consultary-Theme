@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Alternate%20Wavy%20Money%20Bill:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 71897910712,
+  "label" : "Pricing Area",
+  "is_available_for_new_content" : true
+}

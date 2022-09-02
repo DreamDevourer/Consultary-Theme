@@ -1,0 +1,187 @@
+[ {
+  "id" : "b17a081f-bb4a-fb61-1dee-16b335a0a7bf",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Prices To Suit All Sizes of <span>Cultures</span></h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+}, {
+  "id" : "d2714dc5-14de-d245-02bb-02de8b02a753",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "12c73011-f9b3-a242-91bb-af19c0cf75d8",
+    "name" : "enable_main_heading",
+    "display_width" : null,
+    "label" : "Enable main heading",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "fdfb4379-2c78-dd65-0f5a-cffd50e76458",
+    "name" : "enable_discount",
+    "display_width" : null,
+    "label" : "Enable Discount",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_main_heading" : true,
+    "enable_discount" : true
+  }
+}, {
+  "id" : "2f5a7b33-683a-f485-71ea-fc9ed62d7f90",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : 2,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "24cc5474-02e8-e797-369d-58f4798adfc6",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Nave Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Yearly"
+  }, {
+    "id" : "0160e02c-dfa2-9546-5981-3541cb977c06",
+    "name" : "text_2",
+    "display_width" : null,
+    "label" : "Text 2",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Remote Transitions"
+  }, {
+    "id" : "0b4e0b7b-a509-e4b4-f564-843b7ec4428f",
+    "name" : "price",
+    "display_width" : null,
+    "label" : "Price",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "$399"
+  }, {
+    "id" : "e5073738-2c7f-98dc-8d56-f9f7eeba7feb",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Get Started"
+  }, {
+    "id" : "8caee870-9e24-ec24-9500-97999a5c568d",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "b21eb2d2-1a32-ed9c-6341-ae5dd0c60bac",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<span>Always Included</span>\n<ul>\n<li><a>Guided Development</a></li>\n<li><a>Working Sessions</a></li>\n<li><a>Wishlist Development</a></li>\n</ul>"
+  }, {
+    "id" : "b5a0b016-97d1-c816-7370-011603891e79",
+    "name" : "discount",
+    "display_width" : null,
+    "label" : "Discount",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "fdfb4379-2c78-dd65-0f5a-cffd50e76458",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "richtext",
+    "default" : "<span>Discount</span>\n<h4>20%</h4>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "text_field" : "Yearly",
+    "text_2" : "Remote Transitions",
+    "price" : "$399",
+    "button_text" : "Get Started",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "richtext_field" : "<span>Always Included</span>\n<ul>\n<li><a>Guided Development</a></li>\n<li><a>Working Sessions</a></li>\n<li><a>Wishlist Development</a></li>\n</ul>",
+    "discount" : "<span>Discount</span>\n<h4>20%</h4>"
+  }, {
+    "text_field" : "Yearly",
+    "text_2" : "Remote Transitions",
+    "price" : "$399",
+    "button_text" : "Get Started",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "richtext_field" : "<span>Always Included</span>\n<ul>\n<li><a>Guided Development</a></li>\n<li><a>Working Sessions</a></li>\n<li><a>Wishlist Development</a></li>\n</ul>",
+    "discount" : "<span>Discount</span>\n<h4>20%</h4>"
+  } ]
+} ]

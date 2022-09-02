@@ -1,0 +1,86 @@
+[ {
+  "id" : "1f6dcfbe-ca33-1887-8a37-c45c11b61c2a",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/21429431/Imported%20images/unsplash_oRKF_ZBJYGM.png",
+    "alt" : "unsplash_oRKF_ZBJYGM",
+    "loading" : "lazy",
+    "width" : 312,
+    "height" : 287,
+    "max_width" : 312,
+    "max_height" : 287
+  }
+}, {
+  "id" : "8a92fb17-76f0-1200-bd34-e68ab9b9dd1a",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>Remote Transitions Can <span>Help You Grow</span></h2>\n<p>In 2019 the average USA commute time was 26.7 minutes. (US Census)</p>\n<p>Are you ready to give your workers back ~20 hours of time per month?</p>"
+}, {
+  "id" : "47aa7799-a33d-7c82-489e-a7b922e1a7e0",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Contact Us"
+}, {
+  "id" : "2a52c670-8816-2139-fbf8-a934d3eadf56",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6dc64de9-8454-7994-a5e2-817cffe2a462",
+    "name" : "enable_cta_button",
+    "display_width" : null,
+    "label" : "Enable CTA/Button",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_cta_button" : true
+  }
+}, {
+  "id" : "ffd30aa6-d4cd-3fa5-58f0-2ac3a32e216b",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

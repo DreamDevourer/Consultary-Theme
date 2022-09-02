@@ -1,0 +1,45 @@
+<!--
+  templateType: error_page
+  isAvailableForNewContent: true
+  label: 404 error
+
+-->
+{% set template_css = "../../css/templates/system.css" %}
+{% extends "../layouts/base.html" %}
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Error 404 | Page not found" %}
+
+{% set default_header = "default_header" %}
+
+
+
+
+{% block body %}
+<div class="error_main">
+  <section class="content-wrapper">
+  <div class="error-page">
+    {% module "content"
+      path="@hubspot/rich_text",
+      html="<h1>Oh no!</h1><p class='error_subtext'>This page does not exist!</p>"
+    %}
+    
+    <div class="button_design">
+            {% module "button"
+      path="../../modules/button",
+      button_text="Go to the Home"
+      link={
+        "url":
+          {
+            "type": "EXTERNAL",
+            "href": "/"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+      }
+    %}
+    </div>
+  
+  </div>
+</section>
+</div>
+{% endblock body %}

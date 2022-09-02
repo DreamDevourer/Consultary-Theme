@@ -1,0 +1,37 @@
+[ {
+  "id" : "5275419d-2ce6-d96a-56b5-746fb53afadf",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b59b51ed-9da5-387f-fa8b-e6306e725227",
+    "name" : "textalignment_field",
+    "display_width" : null,
+    "label" : "Text alignment",
+    "required" : false,
+    "locked" : false,
+    "type" : "textalignment",
+    "default" : {
+      "text_align" : "LEFT"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "textalignment_field" : {
+      "text_align" : "LEFT"
+    }
+  }
+}, {
+  "id" : "9a1c561c-df18-0155-c5b6-3b77994c2fab",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Culturish operates www.culturish.agency which provides HubSpot digital solutions.</p>\n<p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our HubSpot digital marketing services on www.culturish.agency</p>\n<p>If you choose to use our HubSpot digital marketing services, then you agree to the collection and use of information in relation to this policy. The Personal Information we collect is used for providing and improving our services. We will not use or share your information with anyone except as described in this Privacy Policy.</p>\n<h3>INFORMATION COLLECTION AND USE</h3>\n<p>For a better experience while using our HubSpot digital marketing services, we may require you to provide us with certain personally identifiable information, including but not limited to your name, phone number, and postal address. The information that we collect will be used to contact or identify you.</p>\n<h3>BLOG AND NEWSLETTER SUBSCRIPTIONS</h3>\n<p>On our website, you may subscribe to our blog and once you are in our database we send a monthly newsletter out to all our contacts, both of which contain tracking pixels. The pixel is embedded in emails and allows an analysis of the success of online marketing campaigns. Because of these tracking pixels, we may see if and when you open an email and which links within the email you click. Also, this allows the website to adapt the content of future blogs and newsletters to the interests of the user. This behavior will not be passed on to third parties.</p>\n<h3>LOG DATA</h3>\n<p>We want to inform you that whenever you visit our website, we collect information that your browser sends to us that is called Log Data. This Log Data may include information such as your computer's Internet Protocol (“IP”) address, browser version, pages of our website that you visit, the time and date of your visit, the time spent on those pages, and other statistics.</p>\n<h3>COOKIES</h3>\n<p>Cookies are files with a small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer's hard drive.</p>\n<p>Our website uses these “cookies” to collect information and to improve our services. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to use some portions of our services.</p>\n<h3>SECURITY</h3>\n<p>We value your trust in providing us with your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the Internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>\n<h3>LINKS TO OTHER SITES</h3>\n<p>Our website may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>\n<h3>CHILDREN'S PRIVACY</h3>\n<p>Our services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to take the necessary actions.</p>\n<h3>CHANGES TO THIS PRIVACY POLICY</h3>\n<p>We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.</p>"
+} ]

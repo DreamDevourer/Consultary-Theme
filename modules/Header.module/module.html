@@ -1,0 +1,68 @@
+<div class="header__main">
+  <div class="header__row">
+     <div class="header__logo">
+         <div class="white__logo">
+             {% set loadingAttr = module.logo_field.loading != 'disabled' ? '{{ module.logo_field.loading }}' : '' %}
+
+             {% logo
+            override_inherited_src="{{ module.logo_field.override_inherited_src }}"
+            src="{{ module.logo_field.src }}"
+            alt="{{ module.logo_field.alt }}"
+            width="{{ module.logo_field.width }}"
+            height="{{ module.logo_field.height }}"
+            loading="{{ loadingAttr }}"
+            suppress_company_name="{{ module.logo_field.suppress_company_name }}"
+          %}
+       </div>
+       <div class="black__logo">
+   {% set loadingAttr = module.black_logo.loading != 'disabled' ? '{{ module.black_logo.loading }}' : '' %}
+
+{% logo
+	override_inherited_src="{{ module.black_logo.override_inherited_src }}"
+	src="{{ module.black_logo.src }}"
+	alt="{{ module.black_logo.alt }}"
+	width="{{ module.black_logo.width }}"
+	height="{{ module.black_logo.height }}"
+	loading="{{ loadingAttr }}"
+	suppress_company_name="{{ module.black_logo.suppress_company_name }}"
+%}
+       </div>
+       
+     </div>
+     <div class="header__right">
+          <div class="header__menu mainmenu">
+            {% menu id="{{ module.menu_field }}" %}
+          </div>
+									
+									{% if module.style.enable_cta %}
+       {% if module.button_text  %}
+         <div class="header__cta">
+           {% set href = module.button_link.url.href %}
+           {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+           {% set href = "mailto:" + href %}
+           {% endif %}
+           <a class="button" href="{{ href }}"
+              {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+              {% if module.button_link.rel %}rel="{{ module.button_link.rel }}"{% endif %}
+              >
+                {{ module.button_text }}
+           </a>
+       </div>
+       {% endif %}
+									{% endif %}
+									
+     </div>
+</div>
+</div>
+
+<style>
+  {% scope_css %}
+ .black__logo{ display:none; }
+.default_header .black__logo{ display:block; }
+.default_header .white__logo{ display:none; }
+.default_header .header__menu ul li a{     color: #181930;  }
+     
+  {% end_scope_css %}
+</style>
+
+

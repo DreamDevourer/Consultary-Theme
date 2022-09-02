@@ -1,0 +1,37 @@
+[ {
+  "id" : "5bcf5239-67eb-d7b1-1b31-ea08d1d6a253",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "53267229-be05-85d7-569c-078cc9e2a860",
+    "name" : "enable_main_heading",
+    "display_width" : null,
+    "label" : "Enable main heading",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "enable_main_heading" : true
+  }
+}, {
+  "id" : "e8ad616c-9596-37a7-8699-314a85f402db",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Recent <span>Stories</span>"
+} ]
