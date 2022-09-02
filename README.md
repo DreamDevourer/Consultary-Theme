@@ -10,7 +10,7 @@ Consultary is a small business theme, prepared for the free tier of HubSpot CMS.
   <a href="./LICENSE">License</a>
 </p>
 
-<img src="./images/Thumbnail.png" alt="Promotional cover of Exuberant Growth Theme">
+<img src="./images/Thumbnail.png" alt="Promotional cover of Consultary Lite Theme">
 
 ## Free and Open Source Theme
 It's a free and open-source theme made by me and with help of Remotish Agency, designed in Figma to be modern, clean and developed with optimization in mind.
